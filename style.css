@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    height: 7vw;
+    background: linear-gradient(125deg,#e61b36,#9c1032);
+}
+.nav-container{
+    max-width: 90vw;
+    height: 100%;
+  
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logonav{
+    width: 6.4vw;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+
+.nav-pofile{
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-pofile-name{
+    font-size: 1.2vw;
+    color: aliceblue;
+    margin-right: 10px;
+    
+}
+.bi-cart3{
+    color: #f2f2f2;
+    font-size: 2vw;
+}
+.nav-pofile-cart{
+    position: relative;
+}
+.cartcount{
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    width: 25px;
+    height: 25px;
+    background: #e61b36;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+}
+.sidebar-input{
+    display: flex;
+    margin-right: 10px;   
+}
+.sidebar-search{
+    margin-right: 5px;
+    padding: 8px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 20px;
+    background: #f2f2f2;
+    transition: o.3s;
+    font-size: 1.2vw;
+}
+.sidebar-search:focus{
+    border: 2px solid #47c4f6;
+}
+.bi-search{
+    padding: 10px;
+}
+.nav-search{
+    padding: 7px;
+    border-radius:20px;
+    border: none;
+    outline: none;
+    font-size: 1.4vw;
+   
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    padding: 10px;
+    background: #47c4f6;
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+   
+    display: grid; /*ເຮັດໃຫ້ກ່ອງມີໄລຍະຫ່າງ*/
+    grid-template-columns: repeat(4,1fr);/*ແມ່ນການເພີ່ມແຖວcolumns*/
+    grid-gap: 20px;/*ໄລຍະຫ່າງລະຫວ່າງກ່ອງ*/
+}
+.sidebar-items{
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    color:black;
+    transition: 300ms;
+    font-size: 1.2vw;
+}
+.sidebar-items:hover{
+    background: #9c1032;
+    color: #f2f2f2;
+}
+.product-items{
+    cursor: pointer;
+    transition: 300ms;
+   
+}
+.product-items:hover{
+    transform: scale(1.03);
+
+}
+.product-img{
+    width: 100%;
+    height: 17vw;
+    border-radius: 10px;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-page{
+    min-width: 30vw;
+    max-width: 60vw;
+    max-height: 30vw;
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: scroll;
+   
+}
+.modaldesc-content{
+   
+    display: flex;
+}
+.modaldesc-Detail{
+   
+    margin-left: 20px;
+}
+.modaldesc-img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10px;
+}
+.btn-control{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 300ms;
+}
+.btn-buy{
+    background: linear-gradient(125deg,#e61b36,#9c1032);
+    color: white;
+    margin-left: 10px;
+}
+.cartlist{
+   
+}
+.cartlist-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cartlist-left{
+
+    display: flex;
+}
+.cartlist-right{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.cartlist-left img{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btnc{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid;
+}
