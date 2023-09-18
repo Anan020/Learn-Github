@@ -1,0 +1,12 @@
+.container{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(6, 252, 6);
+}
